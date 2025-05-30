@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Bejelentkezés</title>
+</head>
+<body>
+  <h2>Korrepetitor belépés</h2>
+  {% if error %}
+    <p style="color:red;">{{ error }}</p>
+  {% endif %}
+  <form method="POST">
+    <label for="password">Jelszó:</label>
+    <input type="password" name="password" required>
+    <button type="submit">Belépés</button>
+  </form>
+</body>
+</html>
